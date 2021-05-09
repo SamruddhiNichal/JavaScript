@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS-Arrays</title>
+</head>
+<body>
+    <script>
+
+var countries = ["India","USA","England","France"] ;
+var countries1 = ["Japan","Australia","Russia"] ;
+
+var newCountries = countries.concat(countries1) ;  //adding 2 arrays in new array using concat method
+console.log(newCountries);
+
+var nCountries = [...countries , ...countries1] ;  
+
+nCountries.push('Italy') ;  //for adding new element in end of an array
+
+nCountries.pop() ;   //removes last element in an array
+
+nCountries.shift() ;  //removes first element in an array
+
+nCountries.unshift('Brazil') ;  //adds new element in beginning of an array
+nCountries.unshift('China','Spain') ;
+
+nCountries.splice(2,1) ; //deletes specific element in array
+nCountries.splice(2,0,'Bhutan') ;  //adds new elements to specific index
+
+nCountries.slice(2) ;   //create new array & does not remove any element from source array 
+
+
+//for , for-of , for-in , while , do-while (for iterating arrays)
+
+//for-of
+for(var country of countries){
+    console.log(country);
+}
+
+//for-in
+for(var a in countries){
+    console.log(countries[a]);
+    console.log(a);    //it will give index
+}
+
+//for 
+for( var i = 0 ; i < countries.length ; i++){
+    console.log(countries[i]);
+}
+
+    </script>
+</body>
+</html>

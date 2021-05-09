@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS-Function</title>
+</head>
+<body>
+    <script>
+
+        // Functions -> Simple function , Function expression , Arrow function
+
+
+
+        // Simple Function 
+
+        function addNum(num1,num2){
+            var sum = num1 + num2 ;
+            return sum ;
+            // Or we can write
+            //console.log("Sum is : " + sum) ;
+        }
+
+        console.log(addNum(5,9)) ;
+
+
+
+        // Function Expression (function is assigned to variable)
+
+        var addNos = function(n1, n2){
+            return n1 + n2 ;
+        }
+
+        console.log(addNos(30,40)) ;
+
+        var display = function(firstName = "MunnaBhaiya"){
+            console.log("Ab humko chahiye full ijjat -  " + firstName);
+        }
+        display("GudduBhaiya") ;
+
+
+
+        // Arrow Function
+
+        // function showData(){                    // simple function
+        //     console.log("Hello") ;
+        // }
+
+        // var showData = function(){              // function expression
+        //     console.log("Hello") ;
+        // }
+
+        var showData =()=>{
+            console.log("Helloooo") ;
+        }
+        showData() ;
+
+
+
+
+
+
+    </script>
+</body>
+</html>
